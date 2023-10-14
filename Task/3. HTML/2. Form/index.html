@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Info Form</title>
+</head>
+<body>
+    <div class="main-container">
+        <form id="surveyForm">
+            <div class="inputElement">
+                <label for="firstName">First Name :</label>
+                <input type="text" id="firstName" name="First Name" placeholder="Enter Your First Name" required>
+            </div>
+            <div class="inputElement">
+                <label for="lastName">Last Name :</label>
+                <input type="text" id="lastName"  placeholder="Enter Your Last Name" required>
+            </div>
+            <div class="inputElement">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+          <div class="inputElement">
+            <label for="country">Country :</label>
+            <select id="country" name="country" required>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+            </select>
+          </div>
+          <div class="genderElement">
+            <label for="gender">Gender :</label>
+            <div class="genderInput">
+                <div class="genderBox">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div class="genderBox">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="genderBox">
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+          </div>
+          <div class="inputElement">
+            <label for="profession">Profession :</label>
+            <input type="text" id="profession" name="profession" required>
+          </div>
+          <div class="inputElement">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="inputElement">
+            <label for="mobile">Mobile Number :</label>
+            <input type="tel" id="mobile" name="mobile" required>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="btn" onclick="submitForm()">Submit</button>
+            <button type="reset" class="btn">Reset</button>
+          </div>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

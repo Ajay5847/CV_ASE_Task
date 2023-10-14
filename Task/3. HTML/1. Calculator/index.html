@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2edd2fea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- https://codepen.io/ajay2002/pen/WNLWKgq -->
+        <div class="calculator-container">
+            <input class="box" id="box-1" disabled></input>
+            <div class="box diff1" id="box-2" onclick="clearResult()">C</div>
+            <div class="box diff1" id="box-3" onclick="backSpace()"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="box diff1" id="box-4" onclick="performOperation('/')"><i class="fa-solid fa-divide"></i></div>
+            <div class="box diff2" id="box-5" onclick="appendValue(7)">7</div>
+            <div class="box diff2" id="box-6" onclick="appendValue(8)">8</div>
+            <div class="box diff2" id="box-7" onclick="appendValue(9)">9</div>
+            <div class="box diff1" id="box-8" onclick="performOperation('*')"><i class="fa-solid fa-xmark"></i></div>
+            <div class="box diff2" id="box-9" onclick="appendValue(4)">4</div>
+            <div class="box diff2" id="box-10" onclick="appendValue(5)">5</div>
+            <div class="box diff2" id="box-11" onclick="appendValue(6)">6</div>
+            <div class="box diff1" id="box-12"onclick="performOperation('-')"><i class="fa-solid fa-minus"></i></div>
+            <div class="box diff2" id="box-13" onclick="appendValue(1)">1</div>
+            <div class="box diff2" id="box-14" onclick="appendValue(2)">2</div>
+            <div class="box diff2" id="box-15" onclick="appendValue(3)">3</div>
+            <div class="box diff1" id="box-16" onclick="performOperation('+')"><i class="fa-solid fa-plus"></i></div>
+            <div class="box diff2" id="box-17" onclick="appendValue('.')">.</div>
+            <div class="box diff2" id="box-18" onclick="appendValue(0)">0</div>
+            <div class="box diff1" id="box-19" onclick="calculateResult()"><i class="fa-solid fa-equals"></i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
